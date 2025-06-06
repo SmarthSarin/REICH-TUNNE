@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REICH TUNNE | Cosmetics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card-3d {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card-3d:hover {
+      transform: perspective(1000px) rotateY(2deg) rotateX(2deg) scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-zoom {
+      transition: transform 0.5s ease;
+    }
+
+    .card-3d:hover .img-zoom {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <section class="bg-pink-100 py-16 px-4 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold text-pink-800">REICH TUNNE</h1>
+    <p class="mt-4 text-xl text-pink-700">Luxury Skincare & Cosmetics with a Touch of Elegance</p>
+  </section>
+
+  <!-- Product Section -->
+  <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center text-pink-700 mb-10">Our Signature Tunne Products</h2>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Product Card Template -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden card-3d">
+        <img src="https://i.postimg.cc/N0QRwLJ9/image.png" alt="Tunne Glow Cream" class="w-full img-zoom">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-pink-800">Tunne Glow Cream</h3>
+          <p class="text-sm text-gray-600 mt-2">Enhance your natural radiance with our lightweight, hydrating formula.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden card-3d">
+        <img src="https://i.postimg.cc/KzzLRwym/image.png" alt="Tunne Lip Serum" class="w-full img-zoom">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-pink-800">Tunne Lip Serum</h3>
+          <p class="text-sm text-gray-600 mt-2">Plump, nourish, and protect your lips with a glossy finish.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden card-3d">
+        <img src="https://i.postimg.cc/PJFkdLQt/image.png" alt="Tunne Silk Foundation" class="w-full img-zoom">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-pink-800">Tunne Silk Foundation</h3>
+          <p class="text-sm text-gray-600 mt-2">Flawless, buildable coverage with a silky smooth texture.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden card-3d">
+        <img src="https://i.postimg.cc/9MJdSwnq/image.png" alt="Tunne Rose Mist" class="w-full img-zoom">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-pink-800">Tunne Rose Mist</h3>
+          <p class="text-sm text-gray-600 mt-2">Refresh and hydrate your skin with natural rose extracts.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden card-3d">
+        <img src="https://i.postimg.cc/NGPh9HRt/image.png" alt="Tunne Charcoal Mask" class="w-full img-zoom">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-pink-800">Tunne Charcoal Mask</h3>
+          <p class="text-sm text-gray-600 mt-2">Deep-cleansing mask to detoxify and smooth your skin.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden card-3d">
+        <img src="https://i.postimg.cc/t4QxBz4M/image.png" alt="Tunne Nude Palette" class="w-full img-zoom">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-pink-800">Tunne Nude Palette</h3>
+          <p class="text-sm text-gray-600 mt-2">A versatile collection of warm neutrals for every look.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-100 text-center py-6 mt-10">
+    <p class="text-pink-800 text-sm">&copy; 2025 REICH TUNNE. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
